@@ -1,7 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import ProfileHeader from "./components/ProfileHeader.vue";
+import ContributionGraph from "./components/ContributionGraph.vue";
 </script>
 
 <template>
-  <HelloWorld />
+  <main
+    class="min-h-screen flex flex-col items-center justify-center px-6 py-20"
+  >
+    <ProfileHeader />
+    <ContributionGraph />
+  </main>
 </template>
