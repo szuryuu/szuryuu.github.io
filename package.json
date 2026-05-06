@@ -1,21 +1,24 @@
 {
   "name": "szuryuu.github.io",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szuryuu/szuryuu.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/szuryuu/szuryuu.github.io/issues"
+  },
+  "homepage": "https://github.com/szuryuu/szuryuu.github.io#readme",
   "dependencies": {
-    "lucide-vue-next": "^1.0.0",
-    "vue": "^3.5.32"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.2.4",
-    "@vitejs/plugin-vue": "^6.0.6",
-    "tailwindcss": "^4.2.4",
-    "vite": "^8.0.10"
+    "live-server": "^1.2.2"
   }
 }

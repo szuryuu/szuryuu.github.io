@@ -1,13 +1,84 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>szuryuu.github.io</title>
+    <title>szuryuu | DevOps & Infrastructure</title>
+    <meta
+      name="description"
+      content="Shafwan Ilham Dzaky (szuryuu) — DevOps & Infrastructure Engineer di Yogyakarta. Fokus pada infrastruktur berskala besar, CI/CD, dan arsitektur keamanan."
+    />
+    <meta name="author" content="Shafwan Ilham Dzaky" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://szuryuu.github.io/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="szuryuu | DevOps & Infrastructure" />
+    <meta
+      property="og:description"
+      content="DevOps & Infrastructure Engineer yang membangun dan mengamankan sistem komputasi modern."
+    />
+    <meta property="og:url" content="https://szuryuu.github.io/" />
+    <meta property="og:image" content="https://github.com/szuryuu.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Londrina+Solid:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const s = localStorage.getItem("theme-preference");
+      if (
+        s === "dark" ||
+        (!s && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shafwan Ilham Dzaky",
+        "alternateName": "szuryuu",
+        "url": "https://szuryuu.github.io",
+        "image": "https://github.com/szuryuu.png",
+        "jobTitle": "DevOps Engineer",
+        "sameAs": [
+          "https://github.com/szuryuu",
+          "https://www.linkedin.com/in/shafwan-ilham-dzaky/",
+          "https://www.instagram.com/szuryuu/"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <theme-toggle></theme-toggle>
+    <main class="container">
+      <profile-hero></profile-hero>
+      <div class="content-wrapper">
+        <section class="commit-graph-section">
+          <img
+            src="https://ghchart.rshah.org/18181B/szuryuu"
+            alt="Commit Graph"
+            class="commit-graph light-graph"
+          />
+          <img
+            src="https://ghchart.rshah.org/F4F4F5/szuryuu"
+            alt="Commit Graph"
+            class="commit-graph dark-graph"
+          />
+        </section>
+        <link-grid></link-grid>
+      </div>
+      <footer class="system-footer">
+        <p>
+          &copy; <span id="current-year"></span> szuryuu. All rights reserved.
+        </p>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js"></script>
   </body>
 </html>
